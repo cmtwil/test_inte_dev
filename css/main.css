@@ -1,0 +1,44 @@
+.reponse{
+	background-color: lightgrey;
+	padding:10px;
+	min-height: 40px;
+		color:black;
+
+}
+
+pre{
+	background-color: black;
+	color:white;
+}
+
+/* ==========================================================================
+  C'est ici qu'il faut modifier le css :)
+   ========================================================================== */
+
+.navbar-header{
+    height: 80px;
+}
+.navbar-brand img{
+    width: 83px;
+    height: 57px;
+
+}
+.navbar-fixed-top{
+    background-image: none;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

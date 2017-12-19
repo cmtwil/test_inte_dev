@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="./img/logo.png" /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Test intégration et Développement </h1>
+        <p>Ce test a pour but d'évaluer vos compétences en intégration et développement <br>
+          - Le framework twitter bootstrap est déjà directement inclus dans les sources ( <a href="http://getbootstrap.com/css" target="_blank">Twitter Bootstrap</a>) <br>
+          - JQuery est également inclu <br>
+          - le fichier css dans lequel travailler est déjà créé : css/main.css <br>
+          - le fichier js dans lequel travailler est déjà créé : js/main.js<br>
+
+          La modification du DOM est autorisée et il est vivement recommandé d'ajouter vos propres
+          classes/identifiants css.<br>
+
+            Une fois le test terminé vous pouvez renvoyer le dossier au format .zip à l'adresse christophe@twil.fr
+
+
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+        <h2>Question 1 : Alignement du logo</h2>
+        <p>
+          Le logo Twil de cette page n'est pas aligné comme souhaité, on aimerait qu'il soit  
+
+          au centre de la barre de navigation. A vous de faire les modifications nécessaires !
+  
+        </p>
+
+         <h2>Question 2 : Alignement</h2>
+        <p>
+          Voici une liste de produits Twil, nous souhaiterions les aligner de la manière suivante: <br>
+            - 4 produits par colonne pour les devices > 1200px<br>
+            - 3 produits par colonne pour les devices > 992px<br>
+            - 2 produits par colonne pour les devices > 768px<br>
+  
+        </p>
+        <!-- Début de la liste de produits à aligner -->
+        <div>
+          <h3>Bleu de Mer </h3>
+          <img src="./img/bleu-de-mer.png" />
+        </div>
+        <div>
+          <h3>Bleu de Mer </h3>
+          <img src="./img/bleu-de-mer.png" />
+        </div>
+        <div>
+          <h3>Bleu de Mer </h3>
+          <img src="./img/bleu-de-mer.png" />
+        </div>
+        <div>
+          <h3>Bleu de Mer </h3>
+          <img src="./img/bleu-de-mer.png" />
+        </div>
+        <div>
+          <h3>Colette </h3>
+          <img src="./img/colette.jpeg" />
+        </div>
+        <div>
+          <h3>Colette </h3>
+          <img src="./img/colette.jpeg" />
+        </div>
+        <div>
+          <h3>Colette </h3>
+          <img src="./img/colette.jpeg" />
+        </div>
+        <div>
+          <h3>Colette </h3>
+          <img src="./img/colette.jpeg" />
+        </div>
+        <!-- Fin de la liste de produits à aligner -->
+
+        <h2>Question 3 : Javascript/JQuery</h2>
+        <p>
+            Cette partie s'addresse aux candidats qui ont des notions de javascript/ jQuery : <br>
+             a - Au clic, Changer la couleur du lien "Je veux devenir bleu" en bleu<br>
+             b - Changer aussi le texte du lien en "Je veux devenir orange"  <br>
+             c - Au clic, Changer la couleur du lien "Je veux devenir orange" en orange et son texte   <br>
+
+            <a  href="#" class="color" style="color:white; width:200px; background-color:darkorange;" >Je veux devenir bleu !</a>
+        </p>
+
+    
+
+        <h2>Question 4 : Nombres impairs</h2>
+        <p>
+
+            <strong>Compléter la fonction impairs(n) qui prend en paramètre un entier et qui affiche les n premiers nombres impairs, dans cet exemple on essayer d'afficher les 100 premiers nombres impairs: </strong> <br>
+            <div id="question4" class="reponse">
+            </div>
+
+            <script type="text/javascript">
+             
+              /**
+              * Fonction à corriger ! qui prend en paramètre un entier n
+              * et qui affiche les n entiers de la suite de fibonacci
+              **/
+              function impairs(n){
+                //On souhaite afficher les n premiers nombres impairs dans le container "question4"
+                var container = document.getElementById('question4');
+                container.append(n + " nombres impairs à afficher ici");
+                container.append(" ");
+             
+              }
+              impairs(100);
+            </script>
+           
+        </p>
+
+
+
+        <h2>Question 5 : Symfony - commandes</h2>
+        <p>
+
+            <strong> Dans le bloc reponse de cette question : <br>
+                Ecrire la commande symfony permettant de : <br>
+                - vider le cache Symfony pour un environnement s'appellant "prod". <br>
+                 - Puis ajouter les commandes symfony que vous utilisez le plus quotidiennement
+                    </strong> <br>
+            <div  class="reponse">
+                Réponse à la question 5 à écrire ici
+            </div>
+
+        </p>
+
+        <h2>Question 6 : Symfony - routes</h2>
+        <p>
+          Soit le fichier routing.yml contenu dans le Bundle TwilWineBundle
+
+        </p>
+        <pre>
+          twil_wine_homepage:
+            path:     /home
+            defaults: { _controller: TwilWineBundle:Default:index }
+        
+        </pre>
+        <p>
+
+            <strong>Ajouter Dans le bloc reponse de cette question : <br>
+                Ajouter : <br>
+                - Une route accessible via l'url "mesvins" permettant d'accéder à l'action list du Default controller de TwilWineBundle. <br>
+                - Une route accessible via l'url "supprimer" permettant d'accéder à l'action delete du  controller Admin de TwilWineBundle.
+                    </strong> <br>
+            <div  class="reponse">
+                Réponse à la question 6 à écrire ici
+            </div>
+
+        </p>
+
+         <h2>Question 7 : Symfony - doctrine compréhension </h2>
+        <p>
+         Soit la fonction suivante :
+
+        </p>
+        <pre>
+          public function getRatingSumup()
+          {
+              $qb = $this->_em->createQueryBuilder();
+              $qb
+                  ->select("ROUND(AVG(n.note), 2) as rating_sumup, COUNT(n.id) as rating_count")
+                  ->from('TwilCommentBundle:Comment', 'c')
+                  ->innerJoin('TwilCommentBundle:Thread', 't', 'WITH', 'c.thread = t.id')
+                  ->innerJoin('TwilCommentBundle:Note', 'n', 'WITH', 'n.comment = c.id');
+                 
+              return $qb
+                  ->getQuery()
+                  ->getResult();
+          }
+        
+        </pre>
+        <p>
+
+            <strong>Dans le bloc reponse de cette question : <br>
+                Expliquer brièvement ce que fait cette fonction
+                    </strong> <br>
+            <div  class="reponse">
+                Réponse à la question 7 à écrire ici
+            </div>
+
+        </p>
+
+          <h2>Question 8 : Symfony - doctrine </h2>
+        <p>
+             Soit une entité <strong>Article</strong> avec les champs
+             <strong> titre, description, type, created_at , updated_at</strong>
+        </p>
+
+        
+    
+        <p>
+
+            <strong>Dans le bloc reponse de cette question : <br>
+                Compléter la fonction getArticlesByType chargée de récupérer tout les articles d'un type passé en paramètre.
+                   </strong> <br>
+            <pre  class="reponse">
+              public function getArticlesByType($type){
+
+                $qb = $this->createQueryBuilder('a');
+                $qb = .. compléter ici
+                return $qb->getQuery()->getResult();
+                  
+
+            }
+            </pre>
+
+        </p>
+
+      <footer>
+        <p>&copy; Twil 2017</p>
+      </footer>
+    </div> <!-- /container -->        
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
